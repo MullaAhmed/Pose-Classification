@@ -1,0 +1,8 @@
+python inference.py --pose yolov8n-pose --weight /runs/train4/ckpt_best.pth --source /test/video.mp4 --conf 0.66           # video
+                                                                             --source /test/sample.jpg --conf 0.5 --save    # Image save
+                                                                             --source /test/video.mp4 --conf 0.75 --hide    # to save and hide video window
+                                                                             --source 0 --conf 0.45                         # Camera
+                                                                             --source 'rtsp://link' --conf 0.25 --save      # save RTSP video stream
+
+
+python inference.py --pose yolov8n-pose --model /runs/train0/model.h5 --source /data/drive/drives7.png
